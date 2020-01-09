@@ -6,13 +6,57 @@
 </p>
 
 <p>
+  <strong>Author:</strong>
+  <%= "#{@post.user.first_name} #{@post.user.last_name}" %>
+</p>
+
+<p>
   <strong>Content:</strong>
   <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %>
 </p>
 
+<% if false %>
 <p>
   <strong>Date:</strong>
   <%= @post.date %>
+</p>
+<% end %>
+
+<p>
+  <strong>Category:</strong>
+  <%= @post.category.name %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%=
+    string = ""
+    if @post.tags.length > 0
+      string += @post.tags.first.name
+      @post.tags[1..-1].each do |tag|
+        string += ", #{tag.name}"
+      end
+    else
+      string = "None"
+    end
+    string
+  %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%=
+    string = ""
+    if @post.comments.length > 0
+      @post.comments.each do |comment|
+        string += "<br/><br/> #{comment.user.first_name} #{comment.user.last_name}: #{comment.content}"
+      end
+      string = string.html_safe
+    else
+      string = "None"
+    end
+    string
+  %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
