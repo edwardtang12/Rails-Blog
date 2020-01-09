@@ -78,61 +78,32 @@ Post.all.each do |post|
   post.save
 end
 
-# Categories
-#
-# survival.posts = [bear_guide, parachute_guide]
-#
-# politics.posts << farm_guide
-#
-# galaxy_guide.posts = [earth_guide, alcohol_guide]
-#
-# category_array = [survival, politics, galaxy_guide]
-
 # Comments
 
 comment1 = Comment.create(content: "i like fire trucks and moster trucks", user: walter, post: earth_guide)
 comment2 = Comment.create(content: "walter", user: walter, post: earth_guide)
-# earth_guide.comments = [comment1, comment2]
-# walter.comments = [comment1, comment2]
-
 comment3 = Comment.create(content: "Four legs good, two legs bad.", user: napoleon, post: bear_guide)
-# comment3.post = bear_guide
 comment4 = Comment.create(content: "The only good human being is a dead one.", user: napoleon, post: parachute_guide)
-# comment4.post = parachute_guide
-# napoleon.comments = [comment3, comment4]
-
 comment5 = Comment.create(content: "I didn't know my bear guide was actually on to something", user: austin, post: alcohol_guide)
-# comment5.post = alcohol_guide
-# austin.comments << comment5
-
 comment6 = Comment.create(content: "You should be careful of your rat buddies", user: ford, post: farm_guide)
-# comment6.post = farm_guide
-# ford.comments << comment6
-
-# comment_array = [comment1, comment2, comment3, comment4, comment5, comment6]
 
 # Tags
 
-# tag_guide = Tag.new(name: "Guide")
-# tag_guide.posts = Post.all
+tag_guide = Tag.new(name: "Guide")
+tag_guide.posts = Post.all
+tag_guide.save
 
 tag_event_planning = Tag.create(name: "Event Planning")
 tag_revolution = Tag.create(name: "Revolution")
 farm_guide.tags = [tag_event_planning, tag_revolution]
 farm_guide.save
 
-# tag_travel = Tag.new(name: "Travel")
-# galaxy_guide.posts.each { |post| post.tags << tag_travel }
+tag_travel = Tag.new(name: "Travel")
+galaxy_guide.posts.each do |post|
+  post.tags << tag_travel
+  post.save
+end
 
 tag_economics = Tag.new(name: "Economics")
 tag_economics.posts = [bear_guide, farm_guide]
 tag_economics.save
-
-# tag_array = [tag_event_planning, tag_revolution, tag_economics]
-#
-# post_array.each { |post| post.save }
-# user_array.each { |user| user.save }
-# category_array.each { |category| category.save }
-# tag_array.each { |tag| tag.save }
-# comment_array.each { |comment| comment.save }
-#

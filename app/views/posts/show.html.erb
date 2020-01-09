@@ -33,7 +33,7 @@
     string = ""
     if @post.tags.length > 0
       string += @post.tags.first.name
-      @post.tags[1..-1].each do |tag|
+      @post.tags[1..].each do |tag|
         string += ", #{tag.name}"
       end
     else
@@ -55,7 +55,6 @@
     else
       string = "None"
     end
-    string
   %>
 </p>
 
