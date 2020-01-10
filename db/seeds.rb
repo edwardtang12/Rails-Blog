@@ -58,7 +58,9 @@ Simply follow these seven commandments, along with your comrades on the farm:
 4. No animal shall sleep in a bed.
 5. No animal shall drink alcohol.
 6. No animal shall kill any other animal.
-7. All animals are equal.", user: napoleon, category: politics)
+7. All animals are equal.
+
+Before you know it, society will be yours.", user: napoleon, category: politics)
 
 earth_guide = Post.create(title: "Guide to the Galaxy Entry 1 - Earth", content: "
 Harmless.

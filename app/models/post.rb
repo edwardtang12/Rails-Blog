@@ -5,6 +5,9 @@ class Post < ApplicationRecord
   belongs_to :category
   belongs_to :user
 
-  validates :title, presence: true
+  validates :title, presence: true, length: {
+    maximum: 300,
+    message: 'title must be 300 characters or less'
+  }
   validates :content, presence: true
 end
