@@ -13,6 +13,13 @@ class PostsController < ApplicationController
   end
 
   def stats
+
+    @top_user = Comment.group(:user_id).order("COUNT(user_id) DESC").first.user
+
+    @top_tags = TaggedPost.group(:tag_id).order("COUNT(post_id) DESC").limit(5)
+
+    @longest_post = Post.order("LENGTH(content) DESC").first
+
   end
 
   # GET /posts/new

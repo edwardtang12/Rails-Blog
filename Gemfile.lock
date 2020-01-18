@@ -111,6 +111,7 @@ GEM
       multi_json (~> 1.11)
       os (>= 0.9, < 2.0)
       signet (~> 0.12)
+    hirb (0.7.3)
     httpclient (2.8.3)
     i18n (1.7.1)
       concurrent-ruby (~> 1.0)
@@ -266,6 +267,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  hirb
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4)

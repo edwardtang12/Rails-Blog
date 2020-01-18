@@ -11,6 +11,7 @@ Post.delete_all
 User.delete_all
 Tag.delete_all
 Category.delete_all
+TaggedPost.delete_all
 
 # Users
 
@@ -86,8 +87,9 @@ comment1 = Comment.create(content: "i like fire trucks and moster trucks", user:
 comment2 = Comment.create(content: "walter", user: walter, post: earth_guide)
 comment3 = Comment.create(content: "Four legs good, two legs bad.", user: napoleon, post: bear_guide)
 comment4 = Comment.create(content: "The only good human being is a dead one.", user: napoleon, post: parachute_guide)
-comment5 = Comment.create(content: "I didn't know my bear guide was actually on to something", user: austin, post: alcohol_guide)
+comment5 = Comment.create(content: "I didn't know the planet in my bear guide actually existed", user: austin, post: alcohol_guide)
 comment6 = Comment.create(content: "You should be careful of your rat buddies", user: ford, post: farm_guide)
+comment7 = Comment.create(content: "Disgusting.", user: napoleon, post: alcohol_guide)
 
 # Tags
 
