@@ -1,0 +1,25 @@
+<h1>Blog Stats</h1>
+
+<p>
+  <strong>User with the most comments: </strong>
+  <%= @top_user.first_name %> <%= @top_user.last_name %> (<%= @top_user.comments.size %>)
+</p>
+
+<p>
+  <strong>Most used tags: </strong>
+  <% if Tag.all.length > 0 %>
+    <% @top_tags[0..-2].each do |tag| %>
+      <%= Tag.find(tag.tag_id).name %>,
+    <% end %>
+    <%= Tag.find(@top_tags.last.tag_id).name %>
+  <% else %>
+    No Tags
+  <% end %>
+</p>
+
+<p>
+  <strong>Longest blog post: </strong>
+  <%= @longest_post.title %>
+</p>
+
+<%= link_to 'Back', posts_path %>
