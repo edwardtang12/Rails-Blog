@@ -11,6 +11,7 @@ Post.delete_all
 User.delete_all
 Tag.delete_all
 Category.delete_all
+TaggedPost.delete_all
 
 # Users
 
@@ -110,3 +111,7 @@ end
 tag_economics = Tag.new(name: "Economics")
 tag_economics.posts = [bear_guide, farm_guide]
 tag_economics.save
+
+tag_help = Tag.new(name: "Help")
+tag_help.posts = Post.all
+tag_help.save

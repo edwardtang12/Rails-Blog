@@ -7,7 +7,7 @@
 
 <p>
   <strong>Most used tags: </strong>
-  <% if Tag.all.length > 0 %>
+  <% if @top_tags.length > 0 %>
     <% @top_tags[0..-2].each do |tag| %>
       <%= Tag.find(tag.tag_id).name %>,
     <% end %>
