@@ -2,16 +2,16 @@
 
 <p>
   <strong>User with the most comments: </strong>
-  <%= @top_user.first_name %> <%= @top_user.last_name %> (<%= @top_user.comments.size %>)
+  <%= "#{@top_user.first_name} #{@top_user.last_name} (#{@top_user.comments.size})" %>
 </p>
 
 <p>
   <strong>Most used tags: </strong>
   <% if @top_tags.length > 0 %>
-    <% @top_tags[0..-2].each do |tag| %>
-      <%= Tag.find(tag.tag_id).name %>,
+    <% @top_tags[0..-2].each do |tagged_post| %>
+      <%= tagged_post.tag.name %>,
     <% end %>
-    <%= Tag.find(@top_tags.last.tag_id).name %>
+    <%= @top_tags.last.tag.name %>
   <% else %>
     No Tags
   <% end %>
