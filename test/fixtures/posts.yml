@@ -4,8 +4,11 @@ one:
   title: MyString
   content: MyText
   date: 2020-01-08 16:08:41
-
+  user: one
+  category: one
 two:
   title: MyString
   content: MyText
   date: 2020-01-08 16:08:41
+  user: two
+  category: two
