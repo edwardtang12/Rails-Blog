@@ -1,17 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts <%= posts_url %></h1>
+<!-- <h1>Posts</h1> -->
 
 <% @posts.each do |post| %>
   <div class="post">
-  <%= link_to post.title, post %>
-  <br>
-  <%= returnDate(post) %>
-  <br>
-  <br>
-  <%= truncateString(post.content) %>
-  <br>
-  <br>
+    <%= link_to post.title, post %>
+    <br>
+    <br>
+    <%= returnDate(post) %>
+    <br>
+    <br>
+    <%= truncateString(post.content) %>
+    <br>
+    <br>
   </div>
 <% end %>
 
@@ -37,8 +38,9 @@
     <% end %>
   </tbody>
 </table>
-<% end %>
 
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+<% end %>
+

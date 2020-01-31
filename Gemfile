@@ -5,6 +5,7 @@ ruby '2.6.3'
 
 
 gem 'rails-controller-testing'
+gem 'bootstrap-sass'
 
 gem 'hirb'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

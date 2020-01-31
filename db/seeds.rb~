@@ -76,6 +76,41 @@ It says that alcohol is a colorless volatile liquid formed by the fermentation o
 The best drink in existence is the Pan Galactic Gargle Blaster. The effect of drinking one is like having your brains smashed out by a slice of lemon wrapped round a large gold brick.
 It was invented by Zaphod Beeblebrox.", user: ford, category: galaxy_guide)
 
+hipsum1 = Post.create(title: "Hipsum 1", content: "
+Lorem ipsum dolor amet brooklyn brunch squid jean shorts. Hexagon jianbing portland hella. Bitters af put a bird on it adaptogen gluten-free. Migas activated charcoal pour-over, health goth poke +1 tilde la croix literally.
+
+Microdosing gluten-free blog farm-to-table. Master cleanse pinterest wolf, tilde austin asymmetrical bespoke. Chambray ramps you probably haven't heard of them semiotics, twee pok pok humblebrag brooklyn woke fixie vexillologist man bun fingerstache tousled banh mi. Craft beer etsy photo booth, truffaut vexillologist vinyl la croix adaptogen raw denim gochujang readymade aesthetic. Gastropub woke ramps portland, snackwave echo park lumbersexual. Viral godard meh organic gluten-free chillwave, actually gastropub umami pabst unicorn.
+
+Irony asymmetrical humblebrag portland, enamel pin pitchfork woke. Bespoke put a bird on it photo booth cliche. Blue bottle shabby chic mlkshk synth kogi 90's venmo waistcoat. Yuccie distillery crucifix disrupt, VHS biodiesel quinoa truffaut.
+
+Hammock selvage bushwick cornhole subway tile +1 VHS affogato green juice whatever. Subway tile hella wayfarers brooklyn photo booth, activated charcoal occupy man braid. Scenester affogato tumblr narwhal, vexillologist tofu irony biodiesel swag schlitz gochujang freegan tumeric. DIY iPhone etsy edison bulb bitters keytar af heirloom pork belly pickled artisan ugh four loko. Deep v messenger bag taiyaki thundercats direct trade master cleanse pickled vape waistcoat.
+
+Fanny pack neutra activated charcoal tattooed tofu wolf offal tacos pickled hot chicken. Asymmetrical taiyaki banh mi, tofu affogato austin bushwick before they sold out twee. Deep v ennui man bun cloud bread taxidermy, tote bag normcore drinking vinegar slow-carb pitchfork. Lyft typewriter gentrify four dollar toast synth.", user: napoleon, category: guide)
+
+hipsum2 = Post.create(title: "Hipsum 2", content: "
+Lorem ipsum dolor amet heirloom woke banh mi, microdosing aesthetic wolf man braid 90's cold-pressed. Asymmetrical tumblr selvage, hammock humblebrag gentrify fashion axe tote bag squid palo santo cloud bread. XOXO raclette seitan schlitz. Tumeric vaporware stumptown portland selvage la croix lyft.
+
+Raw denim vegan pour-over kitsch irony artisan tbh semiotics keffiyeh migas occupy cloud bread brooklyn slow-carb flexitarian. Tilde man bun mlkshk williamsburg plaid tumeric sriracha. Mlkshk cray godard hot chicken lyft photo booth. Letterpress hell of four dollar toast lyft next level echo park biodiesel hella ennui kickstarter cred 3 wolf moon. Leggings live-edge flannel taiyaki chillwave adaptogen prism.
+
+Street art blog lomo hexagon kickstarter. Banjo farm-to-table try-hard humblebrag succulents. Next level pinterest iceland, tacos truffaut meggings chicharrones godard actually keytar health goth. Roof party portland bespoke, vegan taxidermy tofu typewriter.
+
+Chillwave lo-fi chicharrones, leggings meditation everyday carry blue bottle pug dreamcatcher tote bag sartorial prism iPhone. You probably haven't heard of them drinking vinegar church-key, normcore pour-over messenger bag tattooed chartreuse yr banjo keytar letterpress. Mustache typewriter kitsch selvage. Tumeric farm-to-table bitters knausgaard wayfarers. Organic cold-pressed shabby chic, flannel readymade bespoke wolf vape tattooed sartorial distillery.
+
+Godard selvage messenger bag, marfa man bun meggings single-origin coffee flexitarian asymmetrical unicorn air plant butcher. Letterpress flexitarian tofu man braid quinoa gastropub drinking vinegar cronut gluten-free green juice distillery selvage skateboard tbh. Stumptown helvetica echo park, you probably haven't heard of them live-edge before they sold out selfies vape. Locavore portland hell of, selvage hexagon meh neutra gochujang tousled 90's meditation. Celiac bitters tbh VHS slow-carb, photo booth gluten-free yr pop-up helvetica PBR&B. Small batch fam microdosing man braid normcore cardigan edison bulb.
+", user: napoleon, category: guide)
+
+
+hipsum3 = Post.create(title: "Hipsum 3", content: "
+Lorem ipsum dolor amet vaporware seitan tumeric, bushwick taiyaki kinfolk tacos paleo keytar forage health goth subway tile pork belly taxidermy. Pok pok schlitz tofu chambray ethical listicle farm-to-table gochujang palo santo umami tousled. Hexagon tumeric jean shorts, palo santo salvia craft beer church-key master cleanse farm-to-table enamel pin +1 kogi readymade plaid ethical. Brunch pork belly 8-bit, cronut chambray lo-fi portland blog you probably haven't heard of them pour-over sriracha. Jianbing mumblecore bitters, cray pok pok venmo chambray vinyl kickstarter.
+
+Seitan hella meditation scenester. Fingerstache craft beer vice, ugh sartorial disrupt cornhole air plant humblebrag fashion axe prism taiyaki taxidermy put a bird on it. Prism lyft enamel pin, 90's art party banh mi cred meh taxidermy wolf lumbersexual pinterest. Ethical direct trade tbh 8-bit iceland adaptogen semiotics, subway tile PBR&B banjo heirloom fingerstache gastropub selfies.
+
+Biodiesel venmo cred asymmetrical vaporware distillery chillwave pug. Celiac dreamcatcher banjo four loko unicorn semiotics williamsburg adaptogen. Adaptogen tattooed prism coloring book kale chips cornhole pabst put a bird on it art party +1. Chambray slow-carb intelligentsia put a bird on it la croix, yuccie tilde distillery fam neutra plaid lumbersexual chicharrones. Plaid bespoke VHS kombucha typewriter blog.
+
+Kitsch franzen enamel pin forage leggings edison bulb microdosing. Blog tacos salvia cardigan ramps. Everyday carry air plant plaid disrupt. Bicycle rights everyday carry pug authentic pitchfork venmo lo-fi literally hashtag occupy tilde plaid four dollar toast sartorial kale chips. Tofu lo-fi blue bottle vice, yr kale chips occupy meggings shabby chic gluten-free neutra disrupt chartreuse tousled. Chambray ramps VHS, affogato sriracha tbh single-origin coffee four dollar toast tumeric tote bag glossier next level vexillologist. Normcore authentic distillery shoreditch, iceland activated charcoal letterpress chambray organic readymade.
+
+Helvetica neutra trust fund tilde bitters gentrify, schlitz raclette af vice plaid deep v authentic chartreuse. Enamel pin tumeric gochujang synth direct trade echo park. Iceland swag ramps artisan brunch salvia coloring book art party 3 wolf moon tumblr. Four loko selfies shaman sustainable. Tumeric swag slow-carb bitters. Jean shorts DIY marfa man bun, lo-fi fanny pack microdosing meggings church-key squid yuccie poutine enamel pin single-origin coffee.", user: walter, category: guide)
+
 Post.all.each do |post|
   post.date = DateTime.now
   post.save
@@ -111,7 +146,3 @@ end
 tag_economics = Tag.new(name: "Economics")
 tag_economics.posts = [bear_guide, farm_guide]
 tag_economics.save
-
-tag_help = Tag.new(name: "Help")
-tag_help.posts = Post.all
-tag_help.save
