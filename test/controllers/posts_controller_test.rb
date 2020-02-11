@@ -5,6 +5,16 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     @post = posts(:one)
   end
 
+  # test "should get stats" do
+  #   @top_user = users(:one)
+  #
+  #   @top_tags = tagged_posts(:one)
+  #
+  #   @longest_post = @post
+  #   get stats_url, top_user: @top_user
+  #   assert_response :success
+  # end
+
   test "should get index" do
     get posts_url
     assert_response :success
@@ -17,7 +27,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create post" do
     assert_difference('Post.count') do
-      post posts_url, params: { post: { content: @post.content, date: @post.date, title: @post.title } }
+      post posts_url, params: { post: { content: @post.content, date: @post.date, title: @post.title, user_id: @post.user.id, category_id: @post.category.id } }
     end
 
     assert_redirected_to post_url(Post.last)

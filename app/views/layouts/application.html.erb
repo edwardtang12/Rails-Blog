@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BlogProject</title>
+    <title>Tang Dynasty Blog</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +10,15 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= action_name%>"> <!-- controller_name -->
+    <div class="blur">
+      <div class="main-window">
+        <%= render 'layouts/header' %>
+        <div class="content">
+          <%= yield %>
+        </div>
+        <%= render 'layouts/footer' %>
+      </div>
+    </div>
   </body>
 </html>

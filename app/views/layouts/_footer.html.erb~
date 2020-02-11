@@ -1,0 +1,4 @@
+<footer>
+  <p>Tang Dynasty Blog</p>
+  <p> class="date">&copy; <%= Date.current.year %></p>
+</footer>

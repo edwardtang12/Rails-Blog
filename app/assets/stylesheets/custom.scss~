@@ -1,0 +1,125 @@
+$gray-medium-light: rgba(234, 234, 234, 0.8);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  background-image: url("/assets/botw.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.blur {
+
+  backdrop-filter: blur(3px);
+  min-height: 100vh;
+  min-width: 100vw;
+
+  .main-window {
+
+    margin: 2%;
+
+    a:hover {
+      background-color: rgba(240, 240, 240, 0);
+      color: black;
+    }
+
+    .title a:hover {
+      background: -webkit-linear-gradient(270deg, red, orange);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+header, footer {
+  background-color: rgb(247, 247, 247);
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+nav, footer {
+  padding: 1% 1%;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    li a:-webkit-any-link {
+      font-size: 40px;
+    }
+  }
+  .title {
+    margin-right: auto;
+  }
+}
+
+li a:-webkit-any-link {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  p {
+    padding: 0.25em;
+  }
+}
+
+div.content, div.post {
+  background-color: $gray-medium-light;
+  font-size: 15px;
+  padding: 2%;
+  margin: 1em 0;
+}
+
+div.content {
+  * {
+    margin: 0.5% 0;
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  strong, .author {
+    font-weight: 600;
+  }
+}
+
+// Action-specific CSS
+
+body.index div.content {
+  background-color: rgba(0,0,0,0);
+  padding: 0;
+  div.post {
+    padding: 1%;
+    a {
+      font-size: 30px;
+    }
+  }
+  #notice {
+    padding: 0;
+  }
+}
