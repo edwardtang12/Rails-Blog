@@ -32,7 +32,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :user %>
+    <%= form.label :author, 'Author' %>
     <%= form.select :user_id, @users %>
   </div>
 
@@ -41,19 +41,14 @@
     <%= form.select :category_id, @categories %>
   </div>
 
-  <div class="field">
-      <%= form.label :tag, 'Tag Name' %>
-      <%= form.text_field :tag %>
-  </div>
-  <div class="field">
-      <%= form.label :tag, 'Tag Name' %>
-      <%= form.text_field :tag %>
-  </div>
-  <div class="field">
-      <%= form.label :tag, 'Tag Name' %>
-      <%= form.text_field :tag %>
-  </div>
+  <%= form.fields_for :tags do |tag_form| %>
 
+    <div class="field">
+      <%= tag_form.label :name, 'Tag Name' %>
+      <%= tag_form.text_field :name %>
+    </div>
+
+  <% end %>
 
   <div class="actions">
     <%= form.submit %>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
+  resources :comments, only: [:create]
   root 'posts#index'
   get '/stats', to: "posts#stats", as: "stats"
   get '/about', to: "static_pages#about", as: "about"
