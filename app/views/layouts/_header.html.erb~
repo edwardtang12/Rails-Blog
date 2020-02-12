@@ -1,7 +1,7 @@
 <header>
   <nav>
     <ul>
-      <li><%= link_to "Tang Dynasty", root_path %></li>
+      <li class="title"><%= link_to "Tang Dynasty", root_path %></li>
       <li><%= link_to "About",   about_path %></li>
       <li><%= link_to "New Post",   new_post_path %></li>
     </ul>

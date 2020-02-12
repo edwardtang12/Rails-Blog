@@ -1,3 +1,4 @@
+<% if false %>
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -23,10 +24,25 @@
 
   <div class="field">
     <%= form.label :date %>
-    <%= form.datetime_select :date %>
+    <%= form.date_select :date %>
   </div>
+
+  <div class="field">
+      <%= form.label :tag %>
+      <%= form.text_field :tag %>
+    </div>
+  <div class="field">
+      <%= form.label :tag %>
+      <%= form.text_field :tag %>
+    </div>
+  <div class="field">
+      <%= form.label :tag %>
+      <%= form.text_field :tag %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>
   </div>
+<% end %>
 <% end %>
