@@ -4,7 +4,13 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    if params[:category_id]
+      @posts = Category.find(params[:category_id]).posts
+    elsif params[:tag_id]
+      @posts = Tag.find(params[:tag_id]).posts
+    else
+      @posts = Post.all
+    end
   end
 
   # GET /posts/1
@@ -48,6 +54,8 @@ class PostsController < ApplicationController
         # format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
+        @users = User.all.map { |user| ["#{user.first_name} #{user.last_name}", user.id] }
+        @categories = Category.all.map { |category| [category.name, category.id] }
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end

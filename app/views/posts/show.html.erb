@@ -8,24 +8,32 @@
   <%= "#{@post.user.first_name} #{@post.user.last_name}" %>
 </p>
 
+<p>
+  <strong>Date:</strong>
+  <%= returnDate(@post) %>
+</p>
+
 <p class="text">
   <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %>
 </p>
 
-<% if false %>
-<p>
-  <strong>Date:</strong>
-  <%= @post.date %>
-</p>
-<% end %>
+<br/><br/>
 
 <p>
   <strong>Category:</strong>
-  <%= @post.category.name %>
+  <%= link_to @post.category.name, category_posts_path(@post.category.id) %>
 </p>
 
 <p>
   <strong>Tags:</strong>
+  <% @post.tags[0..-2].each do |tag| %>
+    <%= link_to tag.name, tag_posts_path(tag.id) %>,
+  <% end %>
+  <% last_tag = @post.tags.last %>
+  <%= link_to last_tag.name, tag_posts_path(last_tag.id) %>
+
+
+  <% if false %>
   <%=
     string = ""
     if @post.tags.length > 0
@@ -38,7 +46,10 @@
     end
     string
   %>
+  <% end %>
 </p>
+
+<br/><br/>
 
 <p>
   <strong>Comments:</strong>
@@ -46,7 +57,7 @@
     string = ""
     if @post.comments.length > 0
       @post.comments.each do |comment|
-        string += "<br/><br/> #{comment.user.first_name} #{comment.user.last_name}: #{comment.content}"
+        string += "<br/> #{comment.user.first_name} #{comment.user.last_name}: #{comment.content}<br/>"
       end
       string = string.html_safe
     else
@@ -54,6 +65,9 @@
     end
   %>
 </p>
+
+
+<br/>
 
 <h2>New Comment</h2>
 
@@ -72,7 +86,7 @@
   <%= form.hidden_field :post_id, value: @post.id %>
 
   <div class="actions">
-    <%= form.submit "Create Comment" %>
+    <%= form.submit "Comment" %>
   </div>
 
 <% end %>

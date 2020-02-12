@@ -32,7 +32,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :author, 'Author' %>
+    <%= form.label :author %>
     <%= form.select :user_id, @users %>
   </div>
 
