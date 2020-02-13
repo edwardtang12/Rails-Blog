@@ -13,43 +13,31 @@
   <%= returnDate(@post) %>
 </p>
 
+<br/>
+
 <p class="text">
   <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %>
 </p>
 
-<br/><br/>
+<br/>
 
 <p>
   <strong>Category:</strong>
-  <%= link_to @post.category.name, category_posts_path(@post.category.id) %>
+  <%= link_to @post.category.name, category_path(@post.category.id) %>
 </p>
 
 <p>
   <strong>Tags:</strong>
   <% @post.tags[0..-2].each do |tag| %>
-    <%= link_to tag.name, tag_posts_path(tag.id) %>,
+    <%= link_to tag.name, tag_path(tag.id) %>,
   <% end %>
   <% last_tag = @post.tags.last %>
-  <%= link_to last_tag.name, tag_posts_path(last_tag.id) %>
-
-
-  <% if false %>
-  <%=
-    string = ""
-    if @post.tags.length > 0
-      string += @post.tags.first.name
-      @post.tags[1..].each do |tag|
-        string += ", #{tag.name}"
-      end
-    else
-      string = "None"
-    end
-    string
-  %>
+  <% if last_tag %>
+    <%= link_to last_tag.name, tag_path(last_tag.id) %>
   <% end %>
 </p>
 
-<br/><br/>
+<br/>
 
 <p>
   <strong>Comments:</strong>
@@ -66,12 +54,23 @@
   %>
 </p>
 
-
 <br/>
 
 <h2>New Comment</h2>
 
 <%= form_with(model: @comment, local: true) do |form| %>
+
+  <% if @comment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+      <ul>
+        <% @comment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <div class="field">
     <%= form.label :user, 'Author' %>

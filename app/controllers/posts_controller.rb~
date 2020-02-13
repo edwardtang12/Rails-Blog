@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   def index
     if params[:category_id]
       @posts = Category.find(params[:category_id]).posts
+    elsif params[:tag_id]
+      @posts = Tag.find(params[:tag_id]).posts
     else
       @posts = Post.all
     end

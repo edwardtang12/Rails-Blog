@@ -116,7 +116,7 @@ div.content {
 
 // Action-specific CSS
 
-body.index div.content {
+body.index div.content, body.categories div.content,  body.tags div.content {
   background-color: rgba(0,0,0,0);
   padding: 0;
   div.post {

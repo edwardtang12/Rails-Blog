@@ -10,7 +10,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="<%= action_name%>"> <!-- controller_name -->
+  <body class="<%= action_name %> <%= controller_name %>">
     <div class="blur">
       <div class="main-window">
         <%= render 'layouts/header' %>

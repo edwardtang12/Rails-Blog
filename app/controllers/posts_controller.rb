@@ -4,13 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    if params[:category_id]
-      @posts = Category.find(params[:category_id]).posts
-    elsif params[:tag_id]
-      @posts = Tag.find(params[:tag_id]).posts
-    else
-      @posts = Post.all
-    end
+    @posts = Post.all
   end
 
   # GET /posts/1
