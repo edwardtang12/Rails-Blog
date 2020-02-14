@@ -10,6 +10,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @comment = Comment.new
+    @users = User.all.map { |user| ["#{user.first_name} #{user.last_name}", user.id] }
   end
 
   def stats
@@ -25,6 +27,10 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    @users = User.all.map { |user| ["#{user.first_name} #{user.last_name}", user.id] }
+    @categories = Category.all.map { |category| [category.name, category.id] }
+
+    3.times { @post.tags.build }
   end
 
   # GET /posts/1/edit
@@ -38,9 +44,12 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to post_path(@post) }
+        # format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
+        @users = User.all.map { |user| ["#{user.first_name} #{user.last_name}", user.id] }
+        @categories = Category.all.map { |category| [category.name, category.id] }
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
@@ -79,6 +88,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content, :date, :user_id, :category_id)
+      params.require(:post).permit(:title, :content, :date, :user_id, :category_id, tags_attributes: [:name])
     end
 end

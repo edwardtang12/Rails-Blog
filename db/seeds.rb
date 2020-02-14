@@ -28,8 +28,7 @@ galaxy_guide = Category.create(name: "The Hitchhiker's Guide to the Galaxy")
 
 # Posts
 
-bear_guide = Post.create(title: "How to Survive a Bear Attack", content: "
-1) Determine the type of bear
+bear_guide = Post.create(title: "How to Survive a Bear Attack", content: "1) Determine the type of bear
 2) Commit to the fight
    Resist the urge to run
    Avoid climbing trees
@@ -51,8 +50,7 @@ And just like that, in 15 simple steps, you've survived!", user: austin, categor
 
 parachute_guide = Post.create(title: "What to Do if your Parachute Fails", content: "Pray", user: austin, category: survival)
 
-farm_guide = Post.create(title: "How to Rectify your Farm Society", content: "
-Simply follow these seven commandments, along with your comrades on the farm:
+farm_guide = Post.create(title: "How to Rectify your Farm Society", content: "Simply follow these seven commandments, along with your comrades on the farm:
 1. Whatever goes upon two legs is an enemy.
 2. Whatever goes upon four legs, or has wings, is a friend.
 3. No animal shall wear clothes.
@@ -63,21 +61,18 @@ Simply follow these seven commandments, along with your comrades on the farm:
 
 Before you know it, society will be yours.", user: napoleon, category: politics)
 
-earth_guide = Post.create(title: "Guide to the Galaxy Entry 1 - Earth", content: "
-Harmless.
+earth_guide = Post.create(title: "Guide to the Galaxy Entry 1 - Earth", content: "Harmless.
 
 UPDATE:
 Mostly Harmless.", user: ford, category: galaxy_guide)
 
-alcohol_guide = Post.create(title: "Guide to the Galaxy Entry 2 - Alcohol", content: "
-Here's what the Encyclopedia Galactica has to say about alcohol.
+alcohol_guide = Post.create(title: "Guide to the Galaxy Entry 2 - Alcohol", content: "Here's what the Encyclopedia Galactica has to say about alcohol.
 It says that alcohol is a colorless volatile liquid formed by the fermentation of sugars and also notes its intoxicating effect on certain carbon-based life forms.
 
 The best drink in existence is the Pan Galactic Gargle Blaster. The effect of drinking one is like having your brains smashed out by a slice of lemon wrapped round a large gold brick.
 It was invented by Zaphod Beeblebrox.", user: ford, category: galaxy_guide)
 
-hipsum1 = Post.create(title: "Hipsum 1", content: "
-Lorem ipsum dolor amet brooklyn brunch squid jean shorts. Hexagon jianbing portland hella. Bitters af put a bird on it adaptogen gluten-free. Migas activated charcoal pour-over, health goth poke +1 tilde la croix literally.
+hipsum1 = Post.create(title: "Hipsum 1", content: "Lorem ipsum dolor amet brooklyn brunch squid jean shorts. Hexagon jianbing portland hella. Bitters af put a bird on it adaptogen gluten-free. Migas activated charcoal pour-over, health goth poke +1 tilde la croix literally.
 
 Microdosing gluten-free blog farm-to-table. Master cleanse pinterest wolf, tilde austin asymmetrical bespoke. Chambray ramps you probably haven't heard of them semiotics, twee pok pok humblebrag brooklyn woke fixie vexillologist man bun fingerstache tousled banh mi. Craft beer etsy photo booth, truffaut vexillologist vinyl la croix adaptogen raw denim gochujang readymade aesthetic. Gastropub woke ramps portland, snackwave echo park lumbersexual. Viral godard meh organic gluten-free chillwave, actually gastropub umami pabst unicorn.
 
@@ -87,8 +82,7 @@ Hammock selvage bushwick cornhole subway tile +1 VHS affogato green juice whatev
 
 Fanny pack neutra activated charcoal tattooed tofu wolf offal tacos pickled hot chicken. Asymmetrical taiyaki banh mi, tofu affogato austin bushwick before they sold out twee. Deep v ennui man bun cloud bread taxidermy, tote bag normcore drinking vinegar slow-carb pitchfork. Lyft typewriter gentrify four dollar toast synth.", user: napoleon, category: survival)
 
-hipsum2 = Post.create(title: "Hipsum 2", content: "
-Lorem ipsum dolor amet heirloom woke banh mi, microdosing aesthetic wolf man braid 90's cold-pressed. Asymmetrical tumblr selvage, hammock humblebrag gentrify fashion axe tote bag squid palo santo cloud bread. XOXO raclette seitan schlitz. Tumeric vaporware stumptown portland selvage la croix lyft.
+hipsum2 = Post.create(title: "Hipsum 2", content: "Lorem ipsum dolor amet heirloom woke banh mi, microdosing aesthetic wolf man braid 90's cold-pressed. Asymmetrical tumblr selvage, hammock humblebrag gentrify fashion axe tote bag squid palo santo cloud bread. XOXO raclette seitan schlitz. Tumeric vaporware stumptown portland selvage la croix lyft.
 
 Raw denim vegan pour-over kitsch irony artisan tbh semiotics keffiyeh migas occupy cloud bread brooklyn slow-carb flexitarian. Tilde man bun mlkshk williamsburg plaid tumeric sriracha. Mlkshk cray godard hot chicken lyft photo booth. Letterpress hell of four dollar toast lyft next level echo park biodiesel hella ennui kickstarter cred 3 wolf moon. Leggings live-edge flannel taiyaki chillwave adaptogen prism.
 
@@ -100,8 +94,7 @@ Godard selvage messenger bag, marfa man bun meggings single-origin coffee flexit
 ", user: napoleon, category: survival)
 
 
-hipsum3 = Post.create(title: "Hipsum 3", content: "
-Lorem ipsum dolor amet vaporware seitan tumeric, bushwick taiyaki kinfolk tacos paleo keytar forage health goth subway tile pork belly taxidermy. Pok pok schlitz tofu chambray ethical listicle farm-to-table gochujang palo santo umami tousled. Hexagon tumeric jean shorts, palo santo salvia craft beer church-key master cleanse farm-to-table enamel pin +1 kogi readymade plaid ethical. Brunch pork belly 8-bit, cronut chambray lo-fi portland blog you probably haven't heard of them pour-over sriracha. Jianbing mumblecore bitters, cray pok pok venmo chambray vinyl kickstarter.
+hipsum3 = Post.create(title: "Hipsum 3", content: "Lorem ipsum dolor amet vaporware seitan tumeric, bushwick taiyaki kinfolk tacos paleo keytar forage health goth subway tile pork belly taxidermy. Pok pok schlitz tofu chambray ethical listicle farm-to-table gochujang palo santo umami tousled. Hexagon tumeric jean shorts, palo santo salvia craft beer church-key master cleanse farm-to-table enamel pin +1 kogi readymade plaid ethical. Brunch pork belly 8-bit, cronut chambray lo-fi portland blog you probably haven't heard of them pour-over sriracha. Jianbing mumblecore bitters, cray pok pok venmo chambray vinyl kickstarter.
 
 Seitan hella meditation scenester. Fingerstache craft beer vice, ugh sartorial disrupt cornhole air plant humblebrag fashion axe prism taiyaki taxidermy put a bird on it. Prism lyft enamel pin, 90's art party banh mi cred meh taxidermy wolf lumbersexual pinterest. Ethical direct trade tbh 8-bit iceland adaptogen semiotics, subway tile PBR&B banjo heirloom fingerstache gastropub selfies.
 
